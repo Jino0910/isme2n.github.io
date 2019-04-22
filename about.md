@@ -186,7 +186,7 @@ Blog : <https://jino0910.github.io>
 - 역할 : iOS 앱 개발
 - 서비스 종료
 
-<img class="markdown-screen" src="/assets/images/schedule/1.jpeg" width="160"/> <img class="markdown-screen" src="/assets/images/schedule/2.jpeg" width="160"/> <img class="markdown-screen" src="/assets/images/schedule/3.jpeg" width="160"/> <img class="markdown-screen" src="/assets/images/schedule/4.jpeg" width="160"/> <img src="/assets/images/schedule/5.jpeg" width="160"/>
+<img src="/assets/images/schedule/1.jpeg" width="160"/> <img src="/assets/images/schedule/2.jpeg" width="160"/> <img src="/assets/images/schedule/3.jpeg" width="160"/> <img src="/assets/images/schedule/4.jpeg" width="160"/> <img src="/assets/images/schedule/5.jpeg" width="160"/>
 
 ## 발표
 
