@@ -18,7 +18,7 @@ tagline:             알 수 없는 추진력을 가진 개발자
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  여행, 게임, 개발, 보컬, 보드가 취미인 개발자
+  여행, 게임, 개발, 보컬, 보드가 취미인 개발
 
 
 # This should be the same author as first entry in `_data/authors.yml`
@@ -27,7 +27,7 @@ author:
   email:             rowkaxl@gmail.com
 
 # Fallback image and color
-image:               /assets/img/IMG_7919.JPG
+image:               /assets/img/bg.png
 # color:               '#4f86aa'
 color:               '#ffffff'
 
