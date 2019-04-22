@@ -27,7 +27,7 @@ author:
   email:             rowkaxl@gmail.com
 
 # Fallback image and color
-image:               /assets/img/IMG_4923.jpg
+image:               /assets/img/bg.png
 color:               '#313437'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
