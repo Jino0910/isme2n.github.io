@@ -8,7 +8,7 @@ rowkaxl:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    여행, 게임, 개발, 보컬, 보드가 취미인 개발자
+    하고싶은 일을 하며 산다는 것
 
   # This photo will be used in the about section
   picture:
@@ -33,7 +33,7 @@ rowkaxl:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    # instagram:       <username>
+    instagram:       rowkaxl
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
@@ -58,7 +58,7 @@ rowkaxl:
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    email:           rowkaxl@gmail.com
+    # email:           rowkaxl@gmail.com
     rss:             https://jino0910.github.io/feed.xml
 
 # Another author
