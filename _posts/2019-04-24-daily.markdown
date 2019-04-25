@@ -4,7 +4,7 @@ title:  "깃헙블로그 첫포스트"
 subtitle:   "Jekyll"
 categories: dailylife
 tags: Jekyll
-header-img: img/daily-logo.png
+header-img: img/daily-logo.jpeg
 ---
 
 
