@@ -18,7 +18,7 @@ tagline:             iOS Developer
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  하고싶은 일을 하며 산다는 것
+  좋아하는 일을 하며 살기
 
 
 # This should be the same author as first entry in `_data/authors.yml`
