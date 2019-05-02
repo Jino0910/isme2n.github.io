@@ -4,7 +4,7 @@ title:  "Git 전반적으로 알아보기"
 subtitle:   "Git"
 categories: development
 tags: git
-header-img: img/git-logo.jpeg
+header-img: img/git-logo.png
 ---
 
 
