@@ -134,6 +134,18 @@ header-img: img/git-logo.png
 ```
   git branch -D <삭제할 브랜치>
 ```
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1778623499634593"
+     data-ad-slot="8243932006"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 4. Git 이력
 
 ---
