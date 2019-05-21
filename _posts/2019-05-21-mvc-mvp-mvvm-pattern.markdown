@@ -48,3 +48,6 @@ MVC, MVP, MVVM 패턴에 대해 알아보자
 3. Model은 ViewModel에 필요한 데이터를 응답
 4. ViewModel은 응답 받은 데이터를 가공해서 저장
 5. View는 ViewModel과의 Data Binding으로 인해 갱신
+
+### Command 패턴이란?
+> 실행될 기능을 캡슐화함으로써 주어진 여러 기능을 실행할 수 있는 재사용성이 높은 클래스를 설계하는 패턴
