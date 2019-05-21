@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "카카오뱅크 코딩테스트 스타"
+title:  "카카오뱅크 코딩테스트"
 subtitle:   "iOS"
 categories: development
 tags: iOS
-header-img: img/ios-logo.png
 ---
 
 
