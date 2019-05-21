@@ -4,6 +4,6 @@ title: Web
 slug: web
 category: development
 menu: false
-order: 7
+order: 8
 header-img: "/img/web-logo.png"
 ---
