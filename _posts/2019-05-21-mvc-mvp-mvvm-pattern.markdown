@@ -18,17 +18,6 @@ MVC, MVP, MVVM 패턴에 대해 알아보자
 
 > MVC는 단점이 있습니다. View와 Model이 서로 의존적이라는 점입니다.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- posts -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1778623499634593"
-     data-ad-slot="2464814109"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ### MVP (Model + View + Presenter)
 
@@ -41,6 +30,7 @@ MVC, MVP, MVVM 패턴에 대해 알아보자
 
 > MVP도 단점이 있습니다. View와 Model은 의존성이 없는 대신 View와 Presenter가 1:1로 강한 의존성을 가지게 됩니다.
 
+
 ### MVVM (Model + View + ViewModel)
 
 1. View에 입력이 들어오면 Command 패턴으로 ViewModel에 명령
@@ -49,5 +39,18 @@ MVC, MVP, MVVM 패턴에 대해 알아보자
 4. ViewModel은 응답 받은 데이터를 가공해서 저장
 5. View는 ViewModel과의 Data Binding으로 인해 갱신
 
+
 ### Command 패턴이란?
 > 실행될 기능을 캡슐화함으로써 주어진 여러 기능을 실행할 수 있는 재사용성이 높은 클래스를 설계하는 패턴
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1778623499634593"
+     data-ad-slot="2464814109"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
