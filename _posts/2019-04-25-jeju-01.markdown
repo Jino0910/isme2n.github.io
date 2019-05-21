@@ -4,7 +4,6 @@ title:  "제주도 여행"
 subtitle:   "제주여행"
 categories: travel
 tags: jeju
-header-img: img/travel-logo.png
 ---
 
 제주도 첫 여행 입니다.

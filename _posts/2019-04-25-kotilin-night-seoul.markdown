@@ -4,7 +4,6 @@ title:  "Kotlin Night 서울"
 subtitle:   "Kotlin"
 categories: development
 tags: Kotlin
-header-img: img/kotlin-logo.png
 ---
 
 Kotlin Night 서울 참석 후기입니다.

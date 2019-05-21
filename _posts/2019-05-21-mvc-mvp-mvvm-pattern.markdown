@@ -4,7 +4,6 @@ title:  "MVC, MVP, MVVM 비교"
 subtitle:   "pattern"
 categories: development
 tags: pattern
-header-img: img/pattern-logo.png
 ---
 
 

@@ -5,5 +5,5 @@ slug: web
 category: development
 menu: false
 order: 8
-header-img: "/img/web-logo.png"
 ---
+<!-- header-img: "/img/-logo.png" -->
