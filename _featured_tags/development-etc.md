@@ -5,5 +5,5 @@ slug: etc
 category: development
 menu: false
 order: 9
-header-img: "/img/web-logo.png"
 ---
+<!-- header-img: "/img/web-logo.png" -->
