@@ -13,7 +13,7 @@ Apple의 새로운 패러다임 제시에 흥분되는 일주일이었다
 자세한건 하나하나 정리 할 예정이며 큰틀에서 한번 정리 하려고 한다
 Good Luck.....(Duet Display, Flutter, Objective-c, Watch 앱들(음성메모, 계산기))
 
-##iOS13
+## iOS13
 
 iPhone6S, iPad Air2 이상
 
