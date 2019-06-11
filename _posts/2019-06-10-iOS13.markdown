@@ -1,0 +1,168 @@
+---
+layout: post
+title:  "WWDC19 iOS13 간단 정리"
+subtitle:   "WWDC19"
+categories: development
+tags: iOS
+---
+
+**WWDC19**를 참석했다
+정말 엄청난 것들이 쏟아졌다
+
+자세한건 하나하나 정리 할 예정이며 큰틀에서 한번 정리 하려고 한다
+Good Luck.....(Duet Display, Flutter, Objective-c, Watch 앱들(음성메모, 계산기))
+
+##iOS13
+
+iPhone6S, iPad Air2 이상
+
+### 활용성
+- 30% 빨라진 FaceID
+- 변경된 앱 다운로드 방식으로 50~60% 용량감소
+- 2배 더 빨라진 앱 실행속도
+- 다크모드
+- 변경된 볼륨조절 UI
+- 저데이터 모드 (이미지 컬러->흑백)
+- 개선된 핫스팟(대기모드 전환시 연결끊김 개선)
+- 개선된 Wi-Fi/블루투스(알고 있는 네트워크, 공개 네트워크 추가 및 제어센터에서 선택가능)
+- 앱스토어 다운로드 개선(200mb초과 다운로드시 셀룰러 환경에서 다운로드 가능하도록 옵션 추가)
+- 오디오 쉐어링(한기기에 에어팟 2대 연결 가능)
+- 애플 로그인(facebook, google login 서비스는 반드시 연동해야함)
+- 블루투스 마우스, 트랙패드 사용가능
+- 게임패드 공식지원
+- 키보드 스와이프
+- 사파리 다운로드 기능
+- 사파리 스크롤 스크린샷
+- 사파리 자동탭 닫기(설정-시간설정)
+- 사진 앱의 큰 변화
+- 최적화된 배터리 충전(80%이상이 되면 충전되면 유저가 폰을 사용하기 전까지 충전 정지 상태를 유지)
+- 지도앱 개선
+- 에어드랍 안정성 개선
+- 리마인더, 메모 개선
+- 파일앱(로컬 저장소에 폴더 생성, zip unzip 가능, 파일 공유폴더 생성, USB drivers and SD cards 외부 메모리 조작가능) 
+
+### 개발
+- SwiftUI Framework (OS 통합 framework, iOS13, macOS10.15 이상)
+- Combine (iOS13이상, react인가 [link](https://medium.com/gett-engineering/rxswift-to-apples-combine-cheat-sheet-e9ce32b14c5b))
+- Swift Package Manager
+- CrypoKit
+- Network관련 Combine 신규, Websocket(iOS13 이상)
+- 영상 편집시 회전
+
+### iPadOS
+- SideCar(듀얼모니터, Duet Display 사형선고, 무선으로 iPad의 팬슬로 이루어지는 드로잉도 맥에서 연동가능)
+- 애플팬슬 움직임 예측 알고리즘 개선 응답시간 감소(아이패드 프로 3세대 + 애플펜슬 2세대 기준??)
+- 홈화면 위젯
+- Slide Over 화면 전환
+- Split View multitasking
+- 한손용 플로팅키보드
+
+### WatchOS
+- 독립선언! 전용 스토어
+
+### MacOS
+- Hello Catalina
+- iPhone, iPad와의 연동성 증가
+- 아이튠즈 안녕..(음악, 팟캐스트, appleTv로 나눠짐)
+
+### TvOS
+- 게임패드지원
+- 4K HDR
+
+### MacPRO
+- 사양 개쩜!
+- 개비쌈!
+
+### 기타
+- Scene delegate(app delegate 하위인터페이스? iPad에서 노트나 사파리처럼 2개를 띄울수 있는 경우에 쓰임, SwiftUI사용시)
+- iOS12에 이어 iOS13에서도 ARKit을 고도화함 애플이 강려크 하게 푸쉬하는중
+- Swift Package Manager의 앱버저닝
+1.2.4 일때
+Major Version Braking Changes
+Minor Version Compatible additions
+Patch Version Bugfixes
+
+### SwiftUI
+  ```
+  1. 적은 양의 코드
+  2. 더 나은 코드
+  3. 어디서든 쓸 수 있는 코드(Swift가 상위에서 공통적이 UI를 만들 수 있게 함)
+  ```
+#### 핵심원칙
+- Declarative(선언형 프로그래밍) : 어떻게를 중심으로 개발한 방식에서 무엇을 중심으로 개발하는 방식 ex)하위속성은 같기떄문에 레이블을 버튼으로 바꾸고 싶으면 한줄만 바꾸면된다
+- Automatic : 여백이나 DarkMode같은 많은 부분을 자동으로 설정해주며 매직무브 애니매이션
+- Compositional : 배우기쉽고 반복을 매우 빠름게 할 수 있음
+- Consistent(일관성)
+
+### Lab
+
+#### App Review Lab
+
+```
+엔지니어랑 리뷰어팀이랑 만나서 즉시 문제를 확인하고 배포까지 할 수있다.
+역시 돈이면 뭔들
+```
+
+#### Building Lab
+
+```
+Q.Building 속도 개선방법
+A.이미 우리 프로젝트에 적용중인 링크 던저줌, 그외에 코드내에 비효울적인 메모리 관리를 수정하라고 함.. Xcode가 그냥 느린걸요..
+라인 올클리어 빌드시간 1시간 걸리고 현재 개선 할 수 없는걸로 판단 하고 있다고 함 WWDC19 전 기준
+```
+[link](https://medium.com/@joshgare/8-tips-to-speed-up-your-swift-build-and-compile-times-in-xcode-73081e1d84ba)
+
+
+#### In App Purchase Lab
+```
+Q.자동 구독결제일때 사용자가 구독취소를 했는지 어떻게 알수 있는지
+A.역시나 취소를 한 영수증에 대해서 cancellation_date_ms 프로퍼티가 생성된다
+
+Q.샌드박스환경에서 구독취소방법
+A.많이 받는 질문인데.. 샌드박스환경에서 구독취소는 방법이 없다 개선중이다
+
+대만 사람이었음.. 한국사람은 없는건가..
+```
+
+#### Mapkit Lab
+```
+Q.이번에 개선된 맵은 한국은 적용대상인가? 그렇다면 언제 될까?
+A.한국은 일단 아이폰출시든 소프트웨어 적용이든 선국가가 아님. 언제 적용될지 모름
+
+Q.현재 AppleMap도 한국에서 사용하긴 불편함이있다 개선될건지 궁금하다
+A.현재 AppleMap은 사용자의 신고정보를 받아 수정하고 있다 따로 개선 할 생각 없다
+
+그래 안쓸께
+```
+
+#### SwiftUI Lab
+```
+Q.SwiftUI에서 view를 struct로 했는데 struct로 할 때 알다시피 retain release 퍼포먼스 문제가 존재하는데 이게 해결되었다면 혹시 어떤 방법으로 해결했나?
+A.본질적으로 해결할 순 없지만(원리상), 외부 struct에 클래스 프로퍼티를 최소로 하는 방법으로 설계했다
+
+Q.프로젝트의 다른 템플릿들은 SwiftUI를 사용할 수 없는데 언제 가능한가?
+A.점점 가능해질 거고 도큐먼트베이스는 9월 전에 나올거다
+
+Q.함수형으로 설계되어 있던데 기존엔 프로그래머가 outlet으로 재사용하며 메모리 효율을 신경썼는데 이젠 신경쓰지 않아도 되는건가요?
+A.그렇다
+
+Q.컬렉션 뷰는 사용 못하나?
+A.제공하진 않지만 쓰길 원한다면 presenter 프로토콜을 사용해서 직접 가져다 쓸 수 있다.
+
+UIHostingController를 얘기한듯?
+
+Q.스토리보드의 운명은 어케되나?(추상적 질문)
+A.여전히 건재할 거다(뻔한대답)
+
+Q.사용하지 못하는 델리게이트라던지 API가 있나?
+A.없다 다 가능하다.
+
+Q.히든 프로퍼티가 있던데 이건 애니메이션할 때만 쓰는건가?
+A.그렇다
+
+Q.SwiftUI가 UIKit, AppKit에 비해 퍼포먼스가 떨어질 일도 있나요?
+A.더 좋아진다. 애플이 성능최적화를 해 나가고 있다 (arc 최초 도입되었을때랑 같은 뉘앙스 개선해 나가고 있다. blablabla… )
+
+Q.SwiftUI로 포팅 할수 있나?
+A.StoryBoard사용하고 있다면 포팅 할 수 있다
+```
