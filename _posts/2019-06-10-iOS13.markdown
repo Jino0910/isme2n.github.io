@@ -48,6 +48,7 @@ iPhone6S, iPad Air2 이상
 - SwiftUI Framework (OS 통합 framework, iOS13, macOS10.15 이상)
 - Combine (iOS13이상, react인가 [link](https://medium.com/gett-engineering/rxswift-to-apples-combine-cheat-sheet-e9ce32b14c5b))
 - Project Catalyst
+
 ```
 - Marzipan으로 알려졌었음
 - 이미 개발된 앱을 다른 애플 운영체제용으로 간단히 바꿀 수 있는 기능을 구현하는 프로젝트이고 우선 아이패드앱을 먼저 지원후에 - 아이폰앱 변환 기능을 지원할 예정
@@ -55,6 +56,7 @@ iPhone6S, iPad Air2 이상
 - 이 과정에서 40개의 Framework를 MacOS에서 쓸 수 있도록 포팅함. 이걸 해주다니 짝짝짝
 - iPad와 다른 메뉴바와 툴바만 설정하면 끝~
 ```
+
 - Swift Package Manager(내,외부 라이브러리 관리 편의성 강화)
 - CrypoKit
 - Network관련 Combine 신규, Websocket(iOS13 이상)
