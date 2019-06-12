@@ -87,7 +87,7 @@ iPhone6S, iPad Air2 이상
 ### MacOS
 - Hello Catalina
 - iPhone, iPad와의 연동성 증가
-- 아이튠즈 안녕..(음악, 팟캐스트, appleTv로 나눠짐)
+- 아이튠즈 안녕..(음악, 팟캐스트, appleTV로 나눠짐)
 
 ### TvOS
 - 게임패드지원
@@ -101,7 +101,7 @@ iPhone6S, iPad Air2 이상
 - Scene delegate(iPad에서 UI Lifecycle을 분리해서 동작함, 노트나 사파리처럼 2개를 띄울수 있는 경우)
 - iOS12에 이어 iOS13에서도 ARKit을 고도화함 애플이 강려크 하게 푸쉬하는중
 - Swift Package Manager의 앱버저닝
-1.2.4 일때
+> 1.2.4 일때
 Major Version Braking Changes
 Minor Version Compatible additions
 Patch Version Bugfixes
@@ -131,11 +131,12 @@ Patch Version Bugfixes
 
 ```
 Q.Building 속도 개선방법
-A.이미 우리 프로젝트에 적용중인 링크 던저줌, 그외에 코드내에 비효울적인 메모리 관리를 수정하라고 함.. Xcode가 그냥 느린걸요..
-라인 올클리어 빌드시간 1시간 걸리고 현재 개선 할 수 없는걸로 판단 하고 있다고 함 WWDC19 전 기준
+A.이미 우리 프로젝트에 적용중인 링크 던저줘서 실망, 그외에 코드내에 비효울적인 메모리 관리를 수정하라고 함.. Xcode가 그냥 느린걸요..
 ```
-[link](https://medium.com/@joshgare/8-tips-to-speed-up-your-swift-build-and-compile-times-in-xcode-73081e1d84ba)
-
+https://medium.com/@joshgare/8-tips-to-speed-up-your-swift-build-and-compile-times-in-xcode-73081e1d84ba
+좀더 찾아보았고 테스트해볼 예정
+https://medium.com/marojuns-ios/swift-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%86%8D%EB%8F%84%EB%A5%BC-%ED%96%A5%EC%83%81%EC%8B%9C%ED%82%A4%EC%9E%90-51617509e35
+https://irace.me/swift-profiling
 
 #### In App Purchase Lab
 ```
@@ -145,7 +146,7 @@ A.역시나 취소를 한 영수증에 대해서 cancellation_date_ms 프로퍼�
 Q.샌드박스환경에서 구독취소방법
 A.많이 받는 질문인데.. 샌드박스환경에서 구독취소는 방법이 없다 개선중이다
 
-대만 사람이었음.. 한국사람은 없는건가..
+대만 사람이었음 랩에 한국사람은 없었다..
 ```
 
 #### Mapkit Lab
@@ -191,8 +192,8 @@ Q.SwiftUI로 포팅 할수 있나?
 A.StoryBoard사용하고 있다면 포팅 할 수 있다
 ```
 
-참고링크
-https://useyourloaf.com/blog/wwdc-2019-viewing-guide/
+**참고링크**
+> https://useyourloaf.com/blog/wwdc-2019-viewing-guide/
 https://github.com/marty-suzuki/GitHubSearchWithSwiftUI?fbclid=IwAR0l_67HyXJWNqbsGtf8aMZwxPjSD2EqUr5UrdwG8cFAS1OK_m9CeDGalO8
 https://www.fivestars.blog/code/ios-dark-mode-how-to.html?fbclid=IwAR0D94YPHto3U7a0TxtZEZBoX9UQWCFou0Se__LsYy0PDBn3km0iE37U8ZI
 https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
