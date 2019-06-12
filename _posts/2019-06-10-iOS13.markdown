@@ -59,6 +59,13 @@ iPhone6S, iPad Air2 이상
 
 - Swift Package Manager(내,외부 라이브러리 관리 편의성 강화)
 - CrypoKit
+```
+1. 안전한 메시지 다이제스트 (해시값)을 계산하고 비교.
+2. 공개키 암호화를 사용한 전자서명의 생성 및 검증, 그리고 키 교환 수행. 메모리에 저장되어 있는 키뿐만 아니라, *Secure Enclave에 의해 저장되고 관리되는 키도 사용할 수 있습니다.*
+3. 메시지 인증 및 암호화와 같은 작업 수행에 사용될 수 있는 대칭키 생성. 저수준 (low-level) 인터페이스 대신 CryptoKit을 우선적으로 사용하십시오. CryptoKit을 사용하면 직접적인 메모리 포인터를 다루지 않아도 될 뿐만 아니라, 메모리 할당 해제 시 민감한 정보를 자동으로 덮어씌우는 등 당신의 앱을 더 안전하게 만들어 줍니다."
+
+사용 가능한 인터페이스들을 살펴보면, 실제로 고수준 암호화 및 서명에 자주 쓰이는 알고리즘들은 거의 다 구현해 놓았다. SHA512/384/256 등 SHA-2 계열은 물론, HMAC와 대칭키, AES, ChaCha20-Poly1305 (ChaChaPoly), 심지어는 X25519 디피-헬먼 키 교환/ed25519 서명을 포함한 타원곡선 암호 (ECC) 알고리즘까지 있다.
+```
 - Network관련 Combine 신규, Websocket(iOS13 이상)
 - 소스코드 미니맵(야심차게 발표함, 나름 굳!)
 - Device Conditions(네트워크, 과열 같은 특정상황 연출가능)
@@ -181,3 +188,11 @@ A.더 좋아진다. 애플이 성능최적화를 해 나가고 있다 (arc 최�
 Q.SwiftUI로 포팅 할수 있나?
 A.StoryBoard사용하고 있다면 포팅 할 수 있다
 ```
+
+참고링크
+https://useyourloaf.com/blog/wwdc-2019-viewing-guide/
+https://github.com/marty-suzuki/GitHubSearchWithSwiftUI?fbclid=IwAR0l_67HyXJWNqbsGtf8aMZwxPjSD2EqUr5UrdwG8cFAS1OK_m9CeDGalO8
+https://www.fivestars.blog/code/ios-dark-mode-how-to.html?fbclid=IwAR0D94YPHto3U7a0TxtZEZBoX9UQWCFou0Se__LsYy0PDBn3km0iE37U8ZI
+https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
+https://www.facebook.com/photo.php?fbid=10157311310620750&set=gm.1378676048957924&type=3&theater&ifg=1
+https://medium.com/marojuns-ios/swift-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%86%8D%EB%8F%84%EB%A5%BC-%ED%96%A5%EC%83%81%EC%8B%9C%ED%82%A4%EC%9E%90-51617509e35
