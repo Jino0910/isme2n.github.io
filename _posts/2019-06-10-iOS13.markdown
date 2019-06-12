@@ -101,17 +101,19 @@ iPhone6S, iPad Air2 이상
 - Scene delegate(iPad에서 UI Lifecycle을 분리해서 동작함, 노트나 사파리처럼 2개를 띄울수 있는 경우)
 - iOS12에 이어 iOS13에서도 ARKit을 고도화함 애플이 강려크 하게 푸쉬하는중
 - Swift Package Manager의 앱버저닝
-> 1.2.4 일때
-Major Version Braking Changes
-Minor Version Compatible additions
-Patch Version Bugfixes
+  - 1.2.4 일때
+  - Major Version
+  - Braking ChangesMinor Version
+  - Compatible additions Patch Version Bugfixes
 
 ### SwiftUI
-  ```
-  1. 적은 양의 코드
-  2. 더 나은 코드
-  3. 어디서든 쓸 수 있는 코드(Swift가 상위에서 공통적이 UI를 만들 수 있게 함)
-  ```
+
+```
+1. 적은 양의 코드
+2. 더 나은 코드
+3. 어디서든 쓸 수 있는 코드(Swift가 상위에서 공통적이 UI를 만들 수 있게 함)
+```
+
 #### 핵심원칙
 - Declarative(선언형 프로그래밍) : 어떻게를 중심으로 개발한 방식에서 무엇을 중심으로 개발하는 방식 ex)하위속성은 같기떄문에 레이블을 버튼으로 바꾸고 싶으면 한줄만 바꾸면된다
 - Automatic : 여백이나 DarkMode같은 많은 부분을 자동으로 설정해주며 매직무브 애니매이션
@@ -131,12 +133,45 @@ Patch Version Bugfixes
 
 ```
 Q.Building 속도 개선방법
-A.이미 우리 프로젝트에 적용중인 링크 던저줘서 실망, 그외에 코드내에 비효울적인 메모리 관리를 수정하라고 함.. Xcode가 그냥 느린걸요..
+A.이미 우리 프로젝트에 적용중인 링크 던저줘서 실망, 그외에 코드내에 비효율적인 객체관리를 수정하라고 함..
+1. Add type annotations(항상 변수 탑을 지정하여 컴파일러가 어떠한 타입인지를 미리 알 수 있도록하여 읽는 속도를 절약)
+
+좋은예 : let array: [String] = [“a”, “b”, “c”, “d”, “e”, “f”, “g”]
+나쁜예 : let array = [“a”, “b”, “c”, “d”, “e”, “f”, “g”]
+
+2. Avoid Nil-Coalescing operator(?? 사용하지말자)
+
+좋은예 :
+if let name = string{
+   /* string has value */
+}else{
+   /* string is nil*/
+}
+나쁜예 : let name = string ?? “”
+
+3. Avoid Ternary Conditional Operators(삼항연산자를 사용하지 말자)
+
+좋은예 :
+var letter = “”
+if isFirst{
+   letter = “a”
+}else{
+   letter = “b”
+}
+나쁜예 : let letter = isFirst ? “a” : “b”
+
+4. Don’t use + to concatenate a string(문자열을 합칠떄 + 를 사용하는것을 지양 ex) "https://google.com/\(path)")
+
+좋은예 : let url = “https://google.com/\("path")/\("anotherpath")"
+나쁜예 : let url = “https://google.com/” + “path/” + “anotherpath”
+
+5. Pre-Compute(조건문의 비교값에 연산을 넣지 말기)
+
+좋은예 : if number == 3600{}
+나쁜예 : if number == 60 * 60 {}
+
 ```
 https://medium.com/@joshgare/8-tips-to-speed-up-your-swift-build-and-compile-times-in-xcode-73081e1d84ba
-좀더 찾아보았고 테스트해볼 예정
-https://medium.com/marojuns-ios/swift-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%86%8D%EB%8F%84%EB%A5%BC-%ED%96%A5%EC%83%81%EC%8B%9C%ED%82%A4%EC%9E%90-51617509e35
-https://irace.me/swift-profiling
 
 #### In App Purchase Lab
 ```
@@ -193,7 +228,7 @@ A.StoryBoard사용하고 있다면 포팅 할 수 있다
 ```
 
 **참고링크**
-> https://useyourloaf.com/blog/wwdc-2019-viewing-guide/
+https://useyourloaf.com/blog/wwdc-2019-viewing-guide/
 https://github.com/marty-suzuki/GitHubSearchWithSwiftUI?fbclid=IwAR0l_67HyXJWNqbsGtf8aMZwxPjSD2EqUr5UrdwG8cFAS1OK_m9CeDGalO8
 https://www.fivestars.blog/code/ios-dark-mode-how-to.html?fbclid=IwAR0D94YPHto3U7a0TxtZEZBoX9UQWCFou0Se__LsYy0PDBn3km0iE37U8ZI
 https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
