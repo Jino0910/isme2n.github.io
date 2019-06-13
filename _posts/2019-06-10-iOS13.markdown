@@ -14,11 +14,11 @@ Apple의 새로운 패러다임 제시에 흥분되는 일주일이었다
 
 Good Luck.....(Duet Display, Flutter, Objective-c, Watch 앱들(음성메모, 계산기))
 
-## iOS13
+# iOS13
 
 iPhone6S, iPad Air2 이상
 
-### 활용성
+## 활용성
 - 30% 빨라진 FaceID
 - 변경된 앱 다운로드 방식으로 50~60% 용량감소
 - 2배 더 빨라진 앱 실행속도
@@ -45,7 +45,7 @@ iPhone6S, iPad Air2 이상
 - 영상 편집시 회전
 - SF Symbols이 폰트화
 
-### 개발
+## 개발
 - SwiftUI Framework (OS 통합 framework, iOS13, macOS10.15 이상)
 - Combine (iOS13이상, react인가 [link](https://medium.com/gett-engineering/rxswift-to-apples-combine-cheat-sheet-e9ce32b14c5b))
 - Project Catalyst
@@ -73,7 +73,7 @@ iPhone6S, iPad Air2 이상
 - 소스코드 미니맵(야심차게 발표함, 나름 굳!)
 - Device Conditions(네트워크, 과열 같은 특정상황 연출가능)
 
-### iPadOS
+## iPadOS
 - SideCar(듀얼모니터, Duet Display 사형선고, 무선으로 iPad의 팬슬로 이루어지는 드로잉도 맥에서 연동가능)
 - 애플팬슬 움직임 예측 알고리즘 개선 응답시간 감소(아이패드 프로 3세대 + 애플펜슬 2세대 기준??)
 - 홈화면 위젯
@@ -81,24 +81,24 @@ iPhone6S, iPad Air2 이상
 - Split View multitasking
 - 한손용 플로팅키보드
 
-### WatchOS
+## WatchOS
 - 독립선언! 전용 스토어
 - SwiftUI로 개발하여 화면 제약 비교적 줄어듬
 
-### MacOS
+## MacOS
 - Hello Catalina
 - iPhone, iPad와의 연동성 증가
 - 아이튠즈 안녕..(음악, 팟캐스트, appleTV로 나눠짐)
 
-### TvOS
+## TvOS
 - 게임패드지원
 - 4K HDR
 
-### MacPRO
+## MacPRO
 - 사양 개쩜!
 - 개비쌈!
 
-### 기타
+## 기타
 - Scene delegate(iPad에서 UI Lifecycle을 분리해서 동작함, 노트나 사파리처럼 2개를 띄울수 있는 경우)
 - iOS12에 이어 iOS13에서도 ARKit을 고도화함 애플이 강려크 하게 푸쉬하는중
 - Swift Package Manager의 앱버저닝
@@ -107,7 +107,7 @@ iPhone6S, iPad Air2 이상
   - Braking ChangesMinor Version
   - Compatible additions Patch Version Bugfixes
 
-### SwiftUI
+## SwiftUI
 
 ```
 1. 적은 양의 코드
@@ -121,7 +121,7 @@ iPhone6S, iPad Air2 이상
 - Compositional : 배우기쉽고 반복을 매우 빠르게 할 수 있음
 - Consistent(일관성) : UI는 데이터의 반영, 사용하던 모델에 BindableObject이라는 프로토콜을 준수하게 하고 @State로 뷰의 상태와 UI를 연결합니다
 
-### Lab
+## Lab
 
 #### App Review Lab
 
@@ -229,10 +229,10 @@ A.StoryBoard사용하고 있다면 포팅 할 수 있다
 ```
 
 **참고링크**
-https://www.apple.com/ios/ios-13-preview/
-https://useyourloaf.com/blog/wwdc-2019-viewing-guide/
-https://github.com/marty-suzuki/GitHubSearchWithSwiftUI?fbclid=IwAR0l_67HyXJWNqbsGtf8aMZwxPjSD2EqUr5UrdwG8cFAS1OK_m9CeDGalO8
-https://www.fivestars.blog/code/ios-dark-mode-how-to.html?fbclid=IwAR0D94YPHto3U7a0TxtZEZBoX9UQWCFou0Se__LsYy0PDBn3km0iE37U8ZI
-https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
-https://www.facebook.com/photo.php?fbid=10157311310620750&set=gm.1378676048957924&type=3&theater&ifg=1
-https://medium.com/marojuns-ios/swift-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%86%8D%EB%8F%84%EB%A5%BC-%ED%96%A5%EC%83%81%EC%8B%9C%ED%82%A4%EC%9E%90-51617509e35
+- https://www.apple.com/ios/ios-13-preview/
+- https://useyourloaf.com/blog/wwdc-2019-viewing-guide/
+- https://github.com/marty-suzuki/GitHubSearchWithSwiftUI?fbclid=IwAR0l_67HyXJWNqbsGtf8aMZwxPjSD2EqUr5UrdwG8cFAS1OK_m9CeDGalO8
+- https://www.fivestars.blog/code/ios-dark-mode-how-to.html?fbclid=IwAR0D94YPHto3U7a0TxtZEZBoX9UQWCFou0Se__LsYy0PDBn3km0iE37U8ZI
+- https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
+- https://www.facebook.com/photo.php?fbid=10157311310620750&set=gm.1378676048957924&type=3&theater&ifg=1
+- https://medium.com/marojuns-ios/swift-%EC%BB%B4%ED%8C%8C%EC%9D%BC-%EC%86%8D%EB%8F%84%EB%A5%BC-%ED%96%A5%EC%83%81%EC%8B%9C%ED%82%A4%EC%9E%90-51617509e35
