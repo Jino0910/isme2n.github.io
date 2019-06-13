@@ -229,6 +229,7 @@ A.StoryBoard사용하고 있다면 포팅 할 수 있다
 ```
 
 **참고링크**
+https://www.apple.com/ios/ios-13-preview/
 https://useyourloaf.com/blog/wwdc-2019-viewing-guide/
 https://github.com/marty-suzuki/GitHubSearchWithSwiftUI?fbclid=IwAR0l_67HyXJWNqbsGtf8aMZwxPjSD2EqUr5UrdwG8cFAS1OK_m9CeDGalO8
 https://www.fivestars.blog/code/ios-dark-mode-how-to.html?fbclid=IwAR0D94YPHto3U7a0TxtZEZBoX9UQWCFou0Se__LsYy0PDBn3km0iE37U8ZI
