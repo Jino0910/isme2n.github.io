@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "[안드로이드 컨퍼런스]우리 회사는 이렇게 개발해요"
-subtitle:   "컨퍼런스"
+subtitle:   "etc"
 categories: development
-tags: etc
+tags: etc Android
 ---
 
 일시 : 2019.08.04(일) 13:00~19:00

@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "cocoapods, carthage 비교"
-subtitle:   "etc"
+subtitle:   "iOS"
 categories: development
-tags: etc cocoapods carthage
+tags: iOS cocoapods carthage
 header-img: img/ios-logo.png
 ---
 
