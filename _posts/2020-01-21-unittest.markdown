@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "UnitTests 환경설정"
+subtitle:   "iOS"
+categories: development
+tags: iOS cocoapods UnitTests
+header-img: img/ios-logo.png
+---
+
+###UnitTests 환경설정
+- target 생성
+- 만약 다른 UnitTests 파일 생성시 target을 맞춤
+- @testable import 시킴
+- import의 모듈을 찾을 수 없을때
+- 프로젝트 클리어
+- pod 사용시 UnitTests에도 사용하는 pod 추가(firebase 이슈)
+
+```
+target 'YourApp' do
+    target 'YourAppTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+end
+```
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- posts -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1778623499634593"
+     data-ad-slot="2464814109"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
